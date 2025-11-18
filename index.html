@@ -3,78 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>HealthFirst</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-    <nav>
-        <div class="navbar">
-            <div class="nav-logo">
-                <img src="images/healtcare-logo.avif" id="i">
-                
-            </div>
-            <h2 class="name">HealthFirst</h2>
-            <div class="nav-menu">
-                <ul>
-                    <li>
-                        <select>
-                            <option value="si1">Hospitals</option>
-                        </select>
-                    </li>
-                    <li>
-                        <select>
-                            <option value="si1">Treatments</option>
-                        </select>
-                    </li>
-                    <li>
-                        <select>
-                            <option value="si1">Services</option>
-                        </select>
-                    </li>
-                    <li>
-                        <select>
-                            <option value="si1">Academics</option>
-                        </select>
-                    </li>
 
-                </ul>
-            </div>
-            <div class="nav-button">
-                <button>Find a Doctor</button>
-            </div>
+<body>
+
+ <!-- NAVBAR -->
+<nav>
+    <div class="navbar">
+
+        <!-- LOGO + NAME -->
+        <div class="nav-left">
+            <img src="images/healtcare-logo.avif" class="logo-img">
+            <h2 class="logo-text">HealthFirst</h2>
         </div>
-    </nav>
-    <section class="hh">
-            <h2 class="app">Schedule Your Appointment Online</h2>
-            <div class="search-container">
-            <div class="search-box">
+
+        <div class="nav-menu">
+            <ul>
+                <li><select><option>Hospitals</option></select></li>
+                <li><select><option>Treatments</option></select></li>
+                <li><select><option>Services</option></select></li>
+                <li><select><option>Academics</option></select></li>
+            </ul>
+        </div>
+
+        <div class="nav-button">
+            <button>Find a Doctor</button>
+        </div>
+    </div>
+</nav>
+
+
+<!-- HERO -->
+<section class="hero">
+
+    
+    <h2 class="hero-title">Schedule Your Appointment Online</h2>
+
+    <div class="search-container">
+        <div class="search-box">
             <span class="icon">🔍</span>
             <input type="text" placeholder="Search for Doctor or Speciality">
-            </div>
+        </div>
 
-            <div class="location-box">
-            <span class="icon">📍</span>
-            <button class="location-btn">Select Location</button>
+        <details class="location-details">
+            <summary class="summary-btn">📍 Select Location</summary>
 
-            <!-- Dropdown -->
             <div class="location-dropdown">
-            <button class="dropdown-btn">Select Hospital ▼</button>
-                <div class="dropdown-content">
+                <h3>Select Location & Hospital</h3>
+
+                <p class="sub">Nearby Locations</p>
+                <label><input type="checkbox"> Delhi</label>
+                <label><input type="checkbox"> Noida</label>
+                <label><input type="checkbox"> Ghaziabad</label>
+
+                <p class="sub">Hospitals</p>
                 <label><input type="checkbox"> Max Hospital - Vaishali</label>
                 <label><input type="checkbox"> Max Hospital - Shalimar Bagh</label>
                 <label><input type="checkbox"> Max Hospital - Patparganj</label>
-                <label><input type="checkbox"> Max Hospital - Saket East</label>
                 <label><input type="checkbox"> BLK Max Hospital</label>
-                <label><input type="checkbox"> Lajpat Nagar - MICC</label>
-                </div>
             </div>
+        </details>
 
-            </div>
+        <button class="appointment-btn">Book an Appointment</button>
 
-            <button class="appointment-btn">Book an Appointment</button>
-            </div>
+    </div>
+</section>
 
-        </div>
-    </section>
+
 </body>
 </html>

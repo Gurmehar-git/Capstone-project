@@ -1,8 +1,10 @@
-*{
-    margin: 0px;
-    padding: 0px;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-.navbar{
+
+.navbar {
     margin: auto;
     width: 80vw;
     height: 10vh;
@@ -11,14 +13,24 @@
     justify-content: space-between;
     align-items: center;
 }
-.name{
-    /* text-decoration: underline; */
-    margin-left: -22%;
-    border: 2px solid white ;
-    padding: 5px;
-    
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 15px;
 }
-.name:hover{
+
+.logo-img {
+    width: 60px;
+    height: auto;
+}
+
+.logo-text {
+    font-size: 26px;
+    font-weight: 700;
+    color: #003c80;
+}
+.logo-text:hover{
     text-decoration: none;
     color: green;
     border-bottom: 2px solid green;
@@ -26,73 +38,63 @@
     cursor: pointer ;
 }
 
-.nav-logo{
-    width: 20%;
-    height: 95%;
-    /* background-color: blue; */
-}
-
-.nav-logo img{
-    width: 30%;
-    height: 100%;
-}
-
-
-
-.nav-menu ul{
+.nav-menu ul {
     display: flex;
     gap: 20px;
     list-style: none;
 }
 
-
-.nav-menu ul li select{
+.nav-menu ul li select {
     padding: 10px;
     border: none;
     font-size: 16px;
     font-weight: bold;
     border-bottom: 2px solid white;
+    background: none;
 }
 
-.nav-menu ul li select:hover{
-    padding: 10px;
+.nav-menu ul li select:hover {
     border-bottom: 2px solid rgb(0, 191, 255);
     transition: all 0.4s ease;
     cursor: pointer;
 }
 
-
-.nav-button button{
+.nav-button button {
     border: 2px solid rgb(0, 191, 255);
-    padding: 20px 30px;
+    padding: 15px 25px;
     background-color: white;
-    border-radius: 30px;
+    border-radius: 25px;
     color: rgb(0, 191, 255);
     font-size: 16px;
     cursor: pointer;
-    transition: transform 0.2s ease,box-shadow 0.2s ease;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.nav-button button:hover{
+.nav-button button:hover {
     background-color: rgb(0, 191, 255);
     color: white;
-    scale: 1.1;
+    scale: 1.05;
     transform: translateY(-3px);
-    box-shadow: 0 8px 25px rgb(0, 191, 255)
-
+    box-shadow: 0 8px 25px rgba(0, 191, 255, 0.4);
 }
-.hh {
+
+.hero {
     background-image: url("https://images.stockcake.com/public/6/2/a/62aff014-6c4d-47a7-823a-306c7ef54624_large/modern-hospital-welcome-stockcake.jpg");
-    /* background: no-repeat; */
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 40vh 0px;
-
+    padding: 30vh 0;
 }
-.app{
+
+.hero-title {
     text-align: center;
-    font-size: 40px;
-    margin-bottom: 80px;
+    font-size: 36px;
+    font-weight: 600;
+    color: #002d5b;
+    margin-bottom: 40px;
+    letter-spacing: 0.5px;
+    margin-bottom: 100px;
+    cursor: default;
+    text-decoration: underline;
 }
 
 .search-container {
@@ -107,9 +109,8 @@
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
 }
 
-
 .search-box,
-.location-box {
+.location-details {
     display: flex;
     align-items: center;
     background: #f4f8fc;
@@ -128,44 +129,53 @@
     font-size: 16px;
 }
 
-.location-btn {
-    background: none;
-    border: none;
-    font-size: 16px;
-    cursor: pointer;
-    width: 100%;
-    text-align: left;
+.location-details {
+    flex-direction: column;
 }
 
+.summary-btn {
+    background: none;
+    border: none;
+    width: 100%;
+    text-align: left;
+    font-size: 16px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.location-details[open] .location-dropdown {
+    opacity: 1;
+    max-height: 600px;
+    padding: 20px;
+}
 
 .location-dropdown {
-    display: none;
-    position: absolute;
-    top: 65px;
-    left: 0;
-    width: 280px;
     background: white;
-    padding: 20px;
     border-radius: 12px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-    text-align: left;
-    z-index: 10;
+    box-shadow: 0px 10px 25px rgba(0,0,0,0.1);
+    margin-top: 10px;
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: 2s ease;
 }
 
 .location-dropdown h3 {
-    margin-top: 0;
+    margin-bottom: 10px;
     color: #003c80;
 }
 
 .location-dropdown label {
     display: block;
-    padding: 8px 0;
+    margin: 6px 0;
 }
 
-.location-dropdown.show {
-    display: block;
+.sub {
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #003c80;
 }
-
 
 .appointment-btn {
     background: #003c80;
@@ -175,5 +185,9 @@
     border-radius: 10px;
     font-size: 17px;
     cursor: pointer;
+    transition: 0.2s;
 }
 
+.appointment-btn:hover {
+    background: #0050b8;
+}
