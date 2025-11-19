@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find a Doctor</title>
+    <link rel="stylesheet" href="css/doctors.css">
+</head>
+
+<body>
+<a href="index.html" class="back-home-btn">← Back to Home</a>
+
+<div class="page-container">
+
+    <!-- LEFT FILTER PANEL -->
+    <aside class="filters">
+
+        <h2>Filters</h2>
+
+        <div class="filter-section">
+            <h3>Sort</h3>
+            <label><input type="checkbox"> Experience: High to Low</label>
+            <label><input type="checkbox"> Earliest Availability</label>
+        </div>
+
+        <div class="filter-section">
+            <h3>Location</h3>
+            <input type="text" placeholder="Search Location">
+
+            <label><input type="checkbox"> Delhi</label>
+            <label><input type="checkbox"> Noida</label>
+            <label><input type="checkbox"> Gurgaon</label>
+            <label><input type="checkbox"> Ghaziabad</label>
+        </div>
+
+        <div class="filter-section">
+            <h3>Specialty</h3>
+            <input type="text" placeholder="Search Specialty">
+            <label><input type="checkbox"> Cardiologist</label>
+            <label><input type="checkbox"> Neurologist</label>
+            <label><input type="checkbox"> Pediatrician</label>
+            <label><input type="checkbox"> Dermatologist</label>
+            <label><input type="checkbox"> Orthopedic Surgeon</label>
+            <label><input type="checkbox"> ENT Specialist</label>
+        </div>
+
+        <div class="filter-section">
+            <h3>Gender</h3>
+            <label><input type="checkbox"> Male</label>
+            <label><input type="checkbox"> Female</label>
+        </div>
+
+    </aside>
+
+
+    <!-- RIGHT DOCTOR LIST -->
+    <main class="doctors-section">
+
+        <!-- Search Bar -->
+        <div class="search-bar">
+            <input type="text" placeholder="Search by Doctor Name">
+        </div>
+
+        <h1>Doctors Available</h1>
+
+        <!-- GRID OF DOCTOR CARDS -->
+        <div class="doctors-grid">
+
+            <!-- Repeat for 30 doctors -->
+
+            <!-- Doctor 1 -->
+            <div class="doctor-card">
+                <img src="https://via.placeholder.com/120" alt="">
+                <div class="doctor-info">
+                    <h2>Dr. Aarav Mehta</h2>
+                    <p class="title">Senior Cardiologist</p>
+                    <p>Experience: 22+ Years</p>
+                    <p>Gender: Male</p>
+                    <p>Location: Delhi</p>
+                    <div class="actions">
+                        <a href="#">View Profile</a>
+                        <button>Book an Appointment</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Doctor 2 -->
+            <div class="doctor-card">
+                <img src="https://via.placeholder.com/120" alt="">
+                <div class="doctor-info">
+                    <h2>Dr. Nisha Kapoor</h2>
+                    <p class="title">Dermatologist</p>
+                    <p>Experience: 15+ Years</p>
+                    <p>Gender: Female</p>
+                    <p>Location: Noida</p>
+                    <div class="actions">
+                        <a href="#">View Profile</a>
+                        <button>Book an Appointment</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Doctor 3 -->
+            <div class="doctor-card">
+                <img src="https://via.placeholder.com/120" alt="">
+                <div class="doctor-info">
+                    <h2>Dr. Rohan Sharma</h2>
+                    <p class="title">Neurologist</p>
+                    <p>Experience: 18+ Years</p>
+                    <p>Gender: Male</p>
+                    <p>Location: Delhi</p>
+                    <div class="actions">
+                        <a href="#">View Profile</a>
+                        <button>Book an Appointment</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Doctor 4 -->
+            <div class="doctor-card">
+                <img src="https://via.placeholder.com/120" alt="">
+                <div class="doctor-info">
+                    <h2>Dr. Meera Singh</h2>
+                    <p class="title">Pediatrician</p>
+                    <p>Experience: 12+ Years</p>
+                    <p>Gender: Female</p>
+                    <p>Location: Gurgaon</p>
+                    <div class="actions">
+                        <a href="#">View Profile</a>
+                        <button>Book an Appointment</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Doctor 5 -->
+            <div class="doctor-card">
+                <img src="https://via.placeholder.com/120" alt="">
+                <div class="doctor-info">
+                    <h2>Dr. Kunal Verma</h2>
+                    <p class="title">Orthopedic Surgeon</p>
+                    <p>Experience: 20+ Years</p>
+                    <p>Gender: Male</p>
+                    <p>Location: Ghaziabad</p>
+                    <div class="actions">
+                        <a href="#">View Profile</a>
+                        <button>Book an Appointment</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Doctor 6 -->
+            <div class="doctor-card">
+                <img src="https://via.placeholder.com/120" alt="">
+                <div class="doctor-info">
+                    <h2>Dr. Priya Arora</h2>
+                    <p class="title">Gynecologist</p>
+                    <p>Experience: 16+ Years</p>
+                    <p>Gender: Female</p>
+                    <p>Location: Delhi</p>
+                    <div class="actions">
+                        <a href="#">View Profile</a>
+                        <button>Book an Appointment</button>
+                    </div>
+                </div>
+            </div>
+
+                        <!-- Doctor 7 -->
+            <div class="doctor-card">
+                <img src="https://via.placeholder.com/120" alt="">
+                <div class="doctor-info">
+                    <h2>Dr. Sanjay Batra</h2>
+                    <p class="title">ENT Specialist</p>
+                    <p>Experience: 14+ Years</p>
+                    <p>Gender: Male</p>
+                    <p>Location: Delhi</p>
+                    <div class="actions">
+                        <a href="#">View Profile</a>
+                        <button>Book an Appointment</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Doctor 8 -->
+            <div class="doctor-card">
+                <img src="https://via.placeholder.com/120" alt="">
+                <div class="doctor-info">
+                    <h2>Dr. Ananya Roy</h2>
+                    <p class="title">Psychiatrist</p>
+                    <p>Experience: 11+ Years</p>
+                    <p>Gender: Female</p>
+                    <p>Location: Gurgaon</p>
+                    <div class="actions">
+                        <a href="#">View Profile</a>
+                        <button>Book an Appointment</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Doctor 9 -->
+            <div class="doctor-card">
+                <img src="https://via.placeholder.com/120" alt="">
+                <div class="doctor-info">
+                    <h2>Dr. Varun Khurana</h2>
+                    <p class="title">General Physician</p>
+                    <p>Experience: 9+ Years</p>
+                    <p>Gender: Male</p>
+                    <p>Location: Noida</p>
+                    <div class="actions">
+                        <a href="#">View Profile</a>
+                        <button>Book an Appointment</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Doctor 10 -->
+            <div class="doctor-card">
+                <img src="https://via.placeholder.com/120" alt="">
+                <div class="doctor-info">
+                    <h2>Dr. Kavita Deshmukh</h2>
+                    <p class="title">Nephrologist</p>
+                    <p>Experience: 17+ Years</p>
+                    <p>Gender: Female</p>
+                    <p>Location: Delhi</p>
+                    <div class="actions">
+                        <a href="#">View Profile</a>
+                        <button>Book an Appointment</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Doctor 11 -->
+            <div class="doctor-card">
+                <img src="https://via.placeholder.com/120" alt="">
+                <div class="doctor-info">
+                    <h2>Dr. Sudeep Gupta</h2>
+                    <p class="title">Gastroenterologist</p>
+                    <p>Experience: 21+ Years</p>
+                    <p>Gender: Male</p>
+                    <p>Location: Ghaziabad</p>
+                    <div class="actions">
+                        <a href="#">View Profile</a>
+                        <button>Book an Appointment</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Doctor 12 -->
+            <div class="doctor-card">
+                <img src="https://via.placeholder.com/120" alt="">
+                <div class="doctor-info">
+                    <h2>Dr. Shreya Malhotra</h2>
+                    <p class="title">Ophthalmologist</p>
+                    <p>Experience: 13+ Years</p>
+                    <p>Gender: Female</p>
+                    <p>Location: Noida</p>
+                    <div class="actions">
+                        <a href="#">View Profile</a>
+                        <button>Book an Appointment</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Doctor 13 -->
+            <div class="doctor-card">
+                <img src="https://via.placeholder.com/120" alt="">
+                <div class="doctor-info">
+                    <h2>Dr. Abhinav Joshi</h2>
+                    <p class="title">Pulmonologist</p>
+                    <p>Experience: 19+ Years</p>
+                    <p>Gender: Male</p>
+                    <p>Location: Delhi</p>
+                    <div class="actions">
+                        <a href="#">View Profile</a>
+                        <button>Book an Appointment</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Doctor 14 -->
+            <div class="doctor-card">
+                <img src="https://via.placeholder.com/120" alt="">
+                <div class="doctor-info">
+                    <h2>Dr. Ritu Bansal</h2>
+                    <p class="title">Oncologist</p>
+                    <p>Experience: 20+ Years</p>
+                    <p>Gender: Female</p>
+                    <p>Location: Delhi</p>
+                    <div class="actions">
+                        <a href="#">View Profile</a>
+                        <button>Book an Appointment</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Doctor 15 -->
+            <div class="doctor-card">
+                <img src="https://via.placeholder.com/120" alt="">
+                <div class="doctor-info">
+                    <h2>Dr. Nirmal Jain</h2>
+                    <p class="title">Rheumatologist</p>
+                    <p>Experience: 18+ Years</p>
+                    <p>Gender: Male</p>
+                    <p>Location: Gurgaon</p>
+                    <div class="actions">
+                        <a href="#">View Profile</a>
+                        <button>Book an Appointment</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Doctor 16 -->
+            <div class="doctor-card">
+                <img src="https://via.placeholder.com/120" alt="">
+                <div class="doctor-info">
+                    <h2>Dr. Mansi Agarwal</h2>
+                    <p class="title">Endocrinologist</p>
+                    <p>Experience: 10+ Years</p>
+                    <p>Gender: Female</p>
+                    <p>Location: Noida</p>
+                    <div class="actions">
+                        <a href="#">View Profile</a>
+                        <button>Book an Appointment</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Doctor 17 -->
+            <div class="doctor-card">
+                <img src="https://via.placeholder.com/120" alt="">
+                <div class="doctor-info">
+                    <h2>Dr. Rajesh Kapoor</h2>
+                    <p class="title">Urologist</p>
+                    <p>Experience: 23+ Years</p>
+                    <p>Gender: Male</p>
+                    <p>Location: Ghaziabad</p>
+                    <div class="actions">
+                        <a href="#">View Profile</a>
+                        <button>Book an Appointment</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Doctor 18 -->
+            <div class="doctor-card">
+                <img src="https://via.placeholder.com/120" alt="">
+                <div class="doctor-info">
+                    <h2>Dr. Sneha Balaji</h2>
+                    <p class="title">Nutritionist</p>
+                    <p>Experience: 7+ Years</p>
+                    <p>Gender: Female</p>
+                    <p>Location: Delhi</p>
+                    <div class="actions">
+                        <a href="#">View Profile</a>
+                        <button>Book an Appointment</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Doctor 19 -->
+            <div class="doctor-card">
+                <img src="https://via.placeholder.com/120" alt="">
+                <div class="doctor-info">
+                    <h2>Dr. Aman Srivastava</h2>
+                    <p class="title">Physiotherapist</p>
+                    <p>Experience: 12+ Years</p>
+                    <p>Gender: Male</p>
+                    <p>Location: Noida</p>
+                    <div class="actions">
+                        <a href="#">View Profile</a>
+                        <button>Book an Appointment</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Doctor 20 -->
+            <div class="doctor-card">
+                <img src="https://via.placeholder.com/120" alt="">
+                <div class="doctor-info">
+                    <h2>Dr. Payal Sethi</h2>
+                    <p class="title">Allergist</p>
+                    <p>Experience: 8+ Years</p>
+                    <p>Gender: Female</p>
+                    <p>Location: Gurgaon</p>
+                    <div class="actions">
+                        <a href="#">View Profile</a>
+                        <button>Book an Appointment</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Doctor 21 -->
+            <div class="doctor-card">
+                <img src="https://via.placeholder.com/120" alt="">
+                <div class="doctor-info">
+                    <h2>Dr. Siddharth Kohli</h2>
+                    <p class="title">Cardiothoracic Surgeon</p>
+                    <p>Experience: 26+ Years</p>
+                    <p>Gender: Male</p>
+                    <p>Location: Delhi</p>
+                    <div class="actions">
+                        <a href="#">View Profile</a>
+                        <button>Book an Appointment</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Doctor 22 -->
+            <div class="doctor-card">
+                <img src="https://via.placeholder.com/120" alt="">
+                <div class="doctor-info">
+                    <h2>Dr. Harleen Kaur</h2>
+                    <p class="title">Immunologist</p>
+                    <p>Experience: 9+ Years</p>
+                    <p>Gender: Female</p>
+                    <p>Location: Delhi</p>
+                    <div class="actions">
+                        <a href="#">View Profile</a>
+                        <button>Book an Appointment</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Doctor 23 -->
+            <div class="doctor-card">
+                <img src="https://via.placeholder.com/120" alt="">
+                <div class="doctor-info">
+                    <h2>Dr. Karan Malhotra</h2>
+                    <p class="title">Plastic Surgeon</p>
+                    <p>Experience: 13+ Years</p>
+                    <p>Gender: Male</p>
+                    <p>Location: Noida</p>
+                    <div class="actions">
+                        <a href="#">View Profile</a>
+                        <button>Book an Appointment</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Doctor 24 -->
+            <div class="doctor-card">
+                <img src="https://via.placeholder.com/120" alt="">
+                <div class="doctor-info">
+                    <h2>Dr. Neha Dhingra</h2>
+                    <p class="title">Dermatologist</p>
+                    <p>Experience: 6+ Years</p>
+                    <p>Gender: Female</p>
+                    <p>Location: Gurgaon</p>
+                    <div class="actions">
+                        <a href="#">View Profile</a>
+                        <button>Book an Appointment</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Doctor 25 -->
+            <div class="doctor-card">
+                <img src="https://via.placeholder.com/120" alt="">
+                <div class="doctor-info">
+                    <h2>Dr. Arvind Rao</h2>
+                    <p class="title">Orthopedist</p>
+                    <p>Experience: 24+ Years</p>
+                    <p>Gender: Male</p>
+                    <p>Location: Ghaziabad</p>
+                    <div class="actions">
+                        <a href="#">View Profile</a>
+                        <button>Book an Appointment</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Doctor 26 -->
+            <div class="doctor-card">
+                <img src="https://via.placeholder.com/120" alt="">
+                <div class="doctor-info">
+                    <h2>Dr. Rhea Sood</h2>
+                    <p class="title">Radiologist</p>
+                    <p>Experience: 10+ Years</p>
+                    <p>Gender: Female</p>
+                    <p>Location: Delhi</p>
+                    <div class="actions">
+                        <a href="#">View Profile</a>
+                        <button>Book an Appointment</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Doctor 27 -->
+            <div class="doctor-card">
+                <img src="https://via.placeholder.com/120" alt="">
+                <div class="doctor-info">
+                    <h2>Dr. Sameer Khan</h2>
+                    <p class="title">Dentist</p>
+                    <p>Experience: 7+ Years</p>
+                    <p>Gender: Male</p>
+                    <p>Location: Noida</p>
+                    <div class="actions">
+                        <a href="#">View Profile</a>
+                        <button>Book an Appointment</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Doctor 28 -->
+            <div class="doctor-card">
+                <img src="https://via.placeholder.com/120" alt="">
+                <div class="doctor-info">
+                    <h2>Dr. Radhika Goyal</h2>
+                    <p class="title">Pathologist</p>
+                    <p>Experience: 8+ Years</p>
+                    <p>Gender: Female</p>
+                    <p>Location: Gurgaon</p>
+                    <div class="actions">
+                        <a href="#">View Profile</a>
+                        <button>Book an Appointment</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Doctor 29 -->
+            <div class="doctor-card">
+                <img src="https://via.placeholder.com/120" alt="">
+                <div class="doctor-info">
+                    <h2>Dr. Hemant Tyagi</h2>
+                    <p class="title">Neurologist</p>
+                    <p>Experience: 14+ Years</p>
+                    <p>Gender: Male</p>
+                    <p>Location: Delhi</p>
+                    <div class="actions">
+                        <a href="#">View Profile</a>
+                        <button>Book an Appointment</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Doctor 30 -->
+            <div class="doctor-card">
+                <img src="https://via.placeholder.com/120" alt="">
+                <div class="doctor-info">
+                    <h2>Dr. Malini Nair</h2>
+                    <p class="title">Pediatric Surgeon</p>
+                    <p>Experience: 16+ Years</p>
+                    <p>Gender: Female</p>
+                    <p>Location: Noida</p>
+                    <div class="actions">
+                        <a href="#">View Profile</a>
+                        <button>Book an Appointment</button>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+    </main>
+
+</div>
+
+</body>
+</html>

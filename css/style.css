@@ -191,3 +191,86 @@
 .appointment-btn:hover {
     background: #0050b8;
 }
+/* NAVBAR NEW MEGA MENU */
+.navbar {
+    width: 80vw;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+.nav-item {
+    position: relative;
+    font-size: 17px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.nav-item span:hover {
+    color: #0095ff;
+}
+
+/* Mega Menu Container */
+.mega-menu {
+    position: absolute;
+    left: 0;
+    top: 60px;
+    width: 650px;
+    background: white;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0px 15px 40px rgba(0,0,0,0.12);
+    display: flex;
+    gap: 40px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20px);
+    transition: all 0.3s ease;
+    z-index: 100;
+}
+
+/* Show on hover */
+.nav-item:hover .mega-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+/* Mega Menu Column */
+.mega-col h3 {
+    font-size: 22px;
+    color: #003c80;
+    margin-bottom: 10px;
+}
+
+.mega-col h4 {
+    font-size: 17px;
+    color: #003c80;
+    margin-bottom: 8px;
+}
+
+.mega-col p {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 15px;
+}
+
+.mega-col a {
+    display: block;
+    margin: 6px 0;
+    color: #003c80;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.mega-col a:hover {
+    color: #0095ff;
+}
