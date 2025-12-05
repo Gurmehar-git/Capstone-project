@@ -31,90 +31,132 @@ body {
 
 /* FILTER PANEL */
 .filters {
-    width: 22%;
-    background: white;
-    padding: 20px;
-    border-right: 1px solid #ddd;
-    height: 100vh;
-    overflow-y: auto;
-}
-
-.filters h2 {
-    margin-bottom: 15px;
-}
-
-.filter-section {
-    margin-bottom: 25px;
-}
-
-.filter-section h3 {
-    margin-bottom: 8px;
-    font-size: 17px;
-}
-
-.filter-section input[type="text"] {
-    width: 90%;
-    padding: 8px;
-    margin-bottom: 10px;
-}
-/* Filters Sidebar */
-.filters {
-    width: 260px;
-    background: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    border: 1px solid #e5e7eb;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+    width: 280px;
+    background: linear-gradient(to bottom, #ffffff 0%, #f8fafc 100%);
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
     font-family: Arial, sans-serif;
+    height: fit-content;
+    position: sticky;
+    top: 20px;
 }
 
 /* Heading Styles */
 .filters h2 {
-    font-size: 22px;
-    margin-bottom: 20px;
-    color: #1f2937;
+    font-size: 24px;
+    margin-bottom: 25px;
+    color: #003c80;
+    font-weight: 700;
+    text-align: center;
+    padding-bottom: 15px;
+    border-bottom: 3px solid #4dd0c8;
 }
 
 .filter-section {
-    margin-bottom: 25px;
+    margin-bottom: 30px;
+    background: white;
+    padding: 18px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+    transition: all 0.3s ease;
+}
+
+.filter-section:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transform: translateY(-2px);
 }
 
 .filter-section h3 {
-    font-size: 16px;
-    margin-bottom: 10px;
-    color: #374151;
-    border-bottom: 1px solid #e5e7eb;
-    padding-bottom: 6px;
+    font-size: 17px;
+    margin-bottom: 15px;
+    color: #003c80;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.filter-section h3::before {
+    content: "▸";
+    color: #4dd0c8;
+    font-size: 20px;
 }
 
 /* Checkbox and Label Styling */
 .filter-section label {
-    display: block;
-    margin: 6px 0;
-    font-size: 14px;
-    color: #4b5563;
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    font-size: 15px;
+    color: #374151;
     cursor: pointer;
+    padding: 8px 10px;
+    border-radius: 6px;
+    transition: all 0.2s ease;
+}
+
+.filter-section label:hover {
+    background-color: #f0f9ff;
+    color: #003c80;
 }
 
 .filter-section input[type="checkbox"] {
-    margin-right: 6px;
+    margin-right: 10px;
     cursor: pointer;
+    width: 18px;
+    height: 18px;
+    accent-color: #4dd0c8;
 }
 
 /* Search Input */
 .filter-section input[type="text"] {
     width: 100%;
-    padding: 8px 10px;
-    border: 1px solid #d1d5db;
-    border-radius: 6px;
-    margin-bottom: 10px;
+    padding: 12px 15px;
+    border: 2px solid #e2e8f0;
+    border-radius: 8px;
+    margin-bottom: 15px;
     font-size: 14px;
     outline: none;
+    transition: all 0.3s ease;
+    background: #f8fafc;
 }
 
 .filter-section input[type="text"]:focus {
-    border-color: #2563eb;
-    box-shadow: 0 0 3px rgba(37, 99, 235, 0.4);
+    border-color: #4dd0c8;
+    background: white;
+    box-shadow: 0 0 0 3px rgba(77, 208, 200, 0.1);
+}
+
+.filter-section input[type="text"]::placeholder {
+    color: #94a3b8;
+}
+
+/* Add search icon effect */
+.filter-section input[type="text"] {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%2394a3b8' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: 12px center;
+    padding-left: 40px;
+}
+/* Scrollbar styling for filters */
+.filters::-webkit-scrollbar {
+    width: 6px;
+}
+
+.filters::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+.filters::-webkit-scrollbar-thumb {
+    background: #4dd0c8;
+    border-radius: 10px;
+}
+
+.filters::-webkit-scrollbar-thumb:hover {
+    background: #3ab5ae;
 }
 
 /* DOCTOR SECTION */
