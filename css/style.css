@@ -364,6 +364,8 @@ hr{
     font-size: 10px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
+
 /*ab footer ka css*/
 .main-footer {
     background-color: #1a1a1a;
@@ -493,10 +495,6 @@ hr{
         gap: 20px;
         text-align: left;
     }
-}
-
-@media (max-width: 480px) {
-
     .footer-container {
         grid-template-columns: 1fr;
     }
@@ -508,38 +506,33 @@ hr{
     .logo-img {
         width: 45px;
     }
-}
-
-/* ----- FORCE DESKTOP NAVBAR ON MOBILE ----- */
-@media (max-width: 768px) {
-
     .navbar {
-        flex-direction: row !important;
-        justify-content: space-between !important;
-        align-items: center !important;
-        width: 100% !important;
-        padding: 10px 20px !important;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 10px 20px;
     }
 
     .nav-links {
-        flex-direction: row !important;
-        gap: 20px !important;
-        width: auto !important;
+        flex-direction: row;
+        gap: 20px;
+        width: auto;
     }
 
     .mega-menu {
-        top: 50px !important;
+        top: 50px;
         left: 0;
-        width: 90vw !important;
-        position: absolute !important;
-        transform: translateY(10px) !important;
+        width: 90vw;
+        position: absolute;
+        transform: translateY(10px);
         opacity: 0;
         visibility: hidden;
     }
 
     .nav-item:hover .mega-menu {
-        opacity: 1 !important;
-        visibility: visible !important;
-        transform: translateY(0) !important;
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
     }
 }

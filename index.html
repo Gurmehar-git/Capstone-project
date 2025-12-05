@@ -189,8 +189,6 @@
                 <br>
                 <p class="imgtxt">HealthFirst is home to some of</p>
                 <p class="imgtxt">the eminent doctors in the world.</p>
-                <a href="Doctors.html">
-                    <button class="imgbtn">Find an Expert</button></a>
             </div>
         </div>
     </div>
@@ -237,6 +235,73 @@
     </div>
 </footer>
 
+    <script>
+        // Get buttons and list container
+const specialitiesBtn = document.querySelector('.specbtn1');
+const proceduresBtn = document.querySelector('.specbtn2');
+const listContainer = document.querySelector('.specli');
 
+// Specialities data
+const specialitiesData = [
+    { img: "https://www.maxhealthcare.in/img/white/cancer%20care%20oncology.svg", text: "Cancer Care/Oncology" },
+    { img: "https://www.maxhealthcare.in/img/white/cardia.svg", text: "Cardiac Sciences" },
+    { img: "https://www.maxhealthcare.in/img/white/Orthopaedics.svg", text: "Orthopaedics and Joint Replacements" },
+    { img: "https://www.maxhealthcare.in/img/white/Gastroenterology.svg", text: "Gastroenterology, Hepatology & Endoscopy" },
+    { img: "https://www.maxhealthcare.in/img/white/The%20Da%20Vinci%20Xi%20Robotic%20Surgery.svg", text: "Robotic Surgery" },
+    { img: "https://www.maxhealthcare.in/img/white/Liver%20Transplant%20and%20bs.svg", text: "Liver Transplant and Biliary Sciences" },
+    { img: "https://www.maxhealthcare.in/img/white/Neurosciences.svg", text: "Neurosciences" },
+    { img: "https://www.maxhealthcare.in/img/white/Thoracic%20Surgery.svg", text: "Thoracic Surgery" }
+];
+
+// Procedures data (based on Max Healthcare)
+const proceduresData = [
+    { img: "https://www.maxhealthcare.in/img/white/cancer%20care%20oncology.svg", text: "CAR T-Cell Therapy" },
+    { img: "https://www.maxhealthcare.in/img/white/Orthopaedics.svg", text: "Knee Replacement Surgery" },
+    { img: "https://www.maxhealthcare.in/img/white/The%20Da%20Vinci%20Xi%20Robotic%20Surgery.svg", text: "Da Vinci Robotic Surgery" },
+    { img: "https://www.maxhealthcare.in/img/white/cardia.svg", text: "Aortic Valve Surgery" },
+    { img: "https://www.maxhealthcare.in/img/white/Liver%20Transplant%20and%20bs.svg", text: "Bone Marrow Transplant (BMT)" },
+    { img: "https://www.maxhealthcare.in/img/white/Thoracic%20Surgery.svg", text: "Lung Transplant" },
+    { img: "https://www.maxhealthcare.in/img/white/cardia.svg", text: "LVAD Surgery" },
+    { img: "https://www.maxhealthcare.in/img/white/Thoracic%20Surgery.svg", text: "Thoracic Surgery" }
+];
+
+// Function to render list items
+function renderList(data) {
+    listContainer.innerHTML = '';
+    data.forEach(item => {
+        const li = document.createElement('li');
+        li.innerHTML = `
+            <button class="btn">
+                <img src="${item.img}" class="cancer" alt="${item.text}">
+                ${item.text}
+            </button>
+        `;
+        listContainer.appendChild(li);
+    });
+}
+
+// Function to update active button
+function setActiveButton(activeBtn, inactiveBtn) {
+    activeBtn.style.color = 'rgb(0, 165, 165)';
+    activeBtn.style.textDecoration = 'underline';
+    inactiveBtn.style.color = 'gray';
+    inactiveBtn.style.textDecoration = 'none';
+}
+
+// Event listener for Specialities button
+specialitiesBtn.addEventListener('click', function() {
+    renderList(specialitiesData);
+    setActiveButton(specialitiesBtn, proceduresBtn);
+});
+
+// Event listener for Procedures button
+proceduresBtn.addEventListener('click', function() {
+    renderList(proceduresData);
+    setActiveButton(proceduresBtn, specialitiesBtn);
+});
+
+// Set initial state (Specialities active)
+setActiveButton(specialitiesBtn, proceduresBtn);
+    </script>
 </body>
 </html>
